@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour {
     Collider collider;
 
     public static List<GameObject> boidList = new List<GameObject>();
+    public static List<GameObject> newBoidList = new List<GameObject>();
     public int spawnAmount;
     public Object prefab;
     public static GameManager instance;

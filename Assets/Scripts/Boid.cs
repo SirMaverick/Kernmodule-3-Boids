@@ -29,11 +29,9 @@ public class Boid : MonoBehaviour {
         }
         StartCoroutine(ApplyRules());
     }
-	
-	// Update is called once per frame
-	void Update () {
-        //CheckBoidList();
-        
+
+    public void RecheckList() {
+        boidList = GameManager.newBoidList;
     }
 
     private Vector3 Rule1(GameObject b) {
